@@ -1,3 +1,4 @@
+import BarraPesquisa from "@/widgets/BarraDePesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
 
 
@@ -6,9 +7,10 @@ export default function Home() {
   return (
     <>
       <div>
-          <BarraSuperior />        
+          <BarraSuperior />      
+          <BarraPesquisa />  
       </div>
-      <hr />
+      <hr className="mt-4" />
       <div className="border-green-600 border-2">Área Conteúdos</div>
       <div className="border-purple-600 border-2">Rodapé</div>
     </>
