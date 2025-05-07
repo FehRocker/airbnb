@@ -1,4 +1,6 @@
-import Logo from "@/components/logo/logo";
+import BotaoIcone from "@/components/BotaoIcone";
+import Logo from "@/components/logo";
+import { IconUserCircle } from "@tabler/icons-react";
 import Link from "next/link";
 
 const BarraSuperior = () => {
@@ -16,7 +18,18 @@ const BarraSuperior = () => {
           </Link>
         </div>
 
-        <button className="rounded-md border-2">Entrar</button>
+       <BotaoIcone
+        icone={(
+        <IconUserCircle
+         aria-label="Icone de usuário" size={26} />)
+        }>
+        Entrar
+        </BotaoIcone>
+
+      
+
+
+
       </div>
     </>
   );
