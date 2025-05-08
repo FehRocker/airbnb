@@ -6,7 +6,7 @@ import Link from "next/link";
 const BarraSuperior = () => {
   return (
     <>
-      <div className="max-w-7xl py-6 container mx-auto flex justify-between items-center">
+      <div className="py-6 flex justify-between items-center">
         <Logo />
 
         <div className="flex gap-6">
