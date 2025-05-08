@@ -1,18 +1,26 @@
 import BarraPesquisa from "@/widgets/BarraDePesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
+import NavegacaoAbasHorizontal from "@/widgets/NavegacaoAbasHorizontal";
 
 
 
 export default function Home() {
   return (
     <>
-      <div>
+      <header className="container mx-auto max-w-7xl">
           <BarraSuperior />      
           <BarraPesquisa />  
-      </div>
+      </header>
       <hr className="mt-4" />
-      <div className="border-green-600 border-2">Área Conteúdos</div>
-      <div className="border-purple-600 border-2">Rodapé</div>
+      
+      <main className="container mx-auto max-w-7xl">
+        <NavegacaoAbasHorizontal/>
+
+      </main>
+      <footer className="container mx-auto max-w-7xl">
+        Rodapé
+
+      </footer>
     </>
   );
 }
