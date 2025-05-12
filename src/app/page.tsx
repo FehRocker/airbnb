@@ -2,6 +2,7 @@ import Acomodacoes from "@/widgets/Acomodacoes";
 import BarraPesquisa from "@/widgets/BarraDePesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
 import NavegacaoAbasHorizontal from "@/widgets/NavegacaoAbasHorizontal";
+import Rodape from "@/widgets/Rodape";
 
 
 
@@ -19,9 +20,8 @@ export default function Home() {
         <Acomodacoes/>
 
       </main>
-      <footer className="container mx-auto max-w-7xl">
-        Rodapé
-
+      <footer className="bg-gray-200">
+        <Rodape/>
       </footer>
     </>
   );

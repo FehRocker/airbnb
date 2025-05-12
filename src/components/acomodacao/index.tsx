@@ -18,7 +18,14 @@ const Acomodacao = ({
         // colocar posição relativa para poder colocar posição absoluta na div
         <figure className="relative"> 
             <div className="p-2 absolute w-full flex justify-between items-center">
-                <span className="bg-white rounded-full px-2">Preferido dos Hóspedes</span>
+               
+               <div>
+                {preferidoHospedes && (
+                    <span className="bg-white rounded-full px-2">Preferido dos Hóspedes</span>
+
+                )}
+               </div>
+               
                 <IconHeart
             aria-label="Icone de favorito"
             size={26}
