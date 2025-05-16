@@ -11,10 +11,8 @@ export default async function Home() {
 
   const dados = await fetchData()
 
-
   return (
     <>
-    {dados.accommodation[10].title}
       <header className="container mx-auto max-w-7xl">
           <BarraSuperior />      
           <BarraPesquisa />  
@@ -22,8 +20,8 @@ export default async function Home() {
       <hr className="mt-4" />
       
       <main className="container mx-auto max-w-7xl">
-        <NavegacaoAbasHorizontal/>
-        <Acomodacoes/>
+        <NavegacaoAbasHorizontal icons={dados.icons} />
+        <Acomodacoes accommodation={dados.accommodation} />
 
       </main>
       <footer className="bg-gray-200">
