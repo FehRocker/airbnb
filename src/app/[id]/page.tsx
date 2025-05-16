@@ -205,9 +205,10 @@ interface PageProps{
 
 
 export default async function Page (
-//    {params}:{ params: Promise<PageProps>}
+   {params}:{ params: Promise<PageProps>}
 ) {
-//    const dados = await params
+   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+   const dados = await params
     return (
         <>
         <div>

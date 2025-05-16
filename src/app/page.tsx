@@ -1,3 +1,4 @@
+import { fetchData } from "@/utils/api";
 import Acomodacoes from "@/widgets/Acomodacoes";
 import BarraPesquisa from "@/widgets/BarraDePesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
@@ -6,9 +7,14 @@ import Rodape from "@/widgets/Rodape";
 
 
 
-export default function Home() {
+export default async function Home() {
+
+  const dados = await fetchData()
+
+
   return (
     <>
+    {dados.accommodation[10].title}
       <header className="container mx-auto max-w-7xl">
           <BarraSuperior />      
           <BarraPesquisa />  
