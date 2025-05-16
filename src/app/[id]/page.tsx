@@ -205,9 +205,9 @@ interface PageProps{
 
 
 export default async function Page (
-   {params}:{ params: Promise<PageProps>}
+//    {params}:{ params: Promise<PageProps>}
 ) {
-   const dados = await params
+//    const dados = await params
     return (
         <>
         <div>
