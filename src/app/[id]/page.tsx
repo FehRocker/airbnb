@@ -1,3 +1,5 @@
+import AcomodacaoDepoimentos from "@/widgets/AcomodacaoDepoimentos"
+import AcomodacaoDetalhes from "@/widgets/AcomodacaoDetalhes"
 import BarraPesquisa from "@/widgets/BarraDePesquisa"
 import BarraSuperior from "@/widgets/BarraSuperior"
 import Galeria from "@/widgets/Galeria"
@@ -219,6 +221,11 @@ export default async function Page (
                    
                    <h1 className="text-3xl pt-6">{acomodacao.title}</h1>
                    <Galeria fotos={acomodacao.photos} />
+
+                   <div className="flex flex-col md:flex-row">
+                    <AcomodacaoDetalhes/>
+                    <AcomodacaoDepoimentos/>
+                   </div>
             
                   </main>
 
