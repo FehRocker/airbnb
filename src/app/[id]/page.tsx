@@ -39,7 +39,7 @@ export default async function Page (
 
                    <div className="flex flex-col md:flex-row">
                     <AcomodacaoDetalhes accommodation={acomodacao}/>
-                    <AcomodacaoDepoimentos/>
+                    <AcomodacaoDepoimentos testimonials={acomodacao.testimonials} />
                    </div>
             
                   </main>

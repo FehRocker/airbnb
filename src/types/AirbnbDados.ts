@@ -20,7 +20,7 @@ export interface Accommodation{
 export interface Testimonials{
     id:string
     name:string
-    Image:string
+    image:string
     comment:string
     rating:number
     customerTime:number

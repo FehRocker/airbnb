@@ -26,6 +26,12 @@ const Rodape = () =>{
                 <li>
                     <Link className="hover:text-red-500" href="/">Informações da Empresa</Link>
                 </li>
+                 <li>
+                    &middot;
+                </li>
+                <li>
+                    <Link className="hover:text-red-500" href="/">Desenvolvido por Fernando Santana</Link>
+                </li>
             </ul>
         </div>
     )
